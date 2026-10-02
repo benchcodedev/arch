@@ -149,16 +149,16 @@ body {
 }
 
 .hero-wordmark-native {
-  font-size: clamp(3.2rem, 10.8vw, 186px);
-  font-size: 10.8cqw;
+  font-size: clamp(3.2rem, 10.2vw, 176px);
+  font-size: 10.2cqw;
   line-height: 0.9;
   letter-spacing: -0.04em;
 }
 
 .hero-subtitle-native {
-  font-size: clamp(1rem, 2.05vw, 36px);
-  font-size: 2.05cqw;
-  line-height: 1.15;
+  font-size: clamp(1rem, 2.15vw, 38px);
+  font-size: 2.15cqw;
+  line-height: 1.2;
   letter-spacing: -0.015em;
 }
 
