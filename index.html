@@ -120,33 +120,54 @@
     <section id="hero" class="bg-[#f4f4f4] relative overflow-hidden">
       
       <!-- DESKTOP HERO CONTAINER (Aspect ratio matches 1723x882 video frame) -->
-      <div class="hidden md:block max-w-[1720px] mx-auto relative select-none hero-animated">
-        <div class="relative w-full aspect-[1723/882]">
-          <!-- Exact frame from video: Wordmark, drafting grid, and 4 staggered strips -->
-          <img src="assets/images/architera/hero_body_exact.jpg" alt="Architera - Architecture for inspired living" class="w-full h-full object-cover" />
+      <div class="hidden md:block max-w-[1720px] mx-auto relative select-none">
+        <div class="relative w-full aspect-[1723/882] overflow-hidden">
+          <!-- Exact frame clean background: drafting grid, and 4 staggered strips -->
+          <img src="assets/images/architera/hero_body_clean.jpg" alt="Architera architectural canvas" class="w-full h-full object-cover" />
           
+          <!-- Accessible screen-reader heading -->
+          <h1 class="sr-only">Architera - Architecture for inspired living</h1>
+
+          <!-- Moving Syllable 1: "Arc" (dari atas ke bawah) -->
+          <img src="assets/images/architera/hero_anim_arc.png" alt="Arc" class="absolute pointer-events-none hero-slice-down select-none" style="left: 29.890%; top: 31.746%; width: 15.496%; height: 22.676%; z-index: 20; animation-delay: 0.15s;" />
+
+          <!-- Moving Syllable 2: "Chi" / "hi" (dari bawah ke atas) -->
+          <img src="assets/images/architera/hero_anim_chi.png" alt="hi" class="absolute pointer-events-none hero-slice-up select-none" style="left: 45.386%; top: 31.746%; width: 9.750%; height: 22.676%; z-index: 20; animation-delay: 0.3s;" />
+
+          <!-- Moving Syllable 3: "te" (dari atas ke bawah) -->
+          <img src="assets/images/architera/hero_anim_te.png" alt="te" class="absolute pointer-events-none hero-slice-down select-none" style="left: 55.136%; top: 31.746%; width: 9.576%; height: 22.676%; z-index: 20; animation-delay: 0.45s;" />
+
+          <!-- Moving Syllable 4: "ra" (dari bawah ke atas) -->
+          <img src="assets/images/architera/hero_anim_ra.png" alt="ra" class="absolute pointer-events-none hero-slice-up select-none" style="left: 64.713%; top: 31.746%; width: 15.380%; height: 22.676%; z-index: 20; animation-delay: 0.6s;" />
+
+          <!-- Moving Subtitle: "Architecture for inspired living" (dari kiri) -->
+          <img src="assets/images/architera/hero_anim_subtitle.png" alt="Architecture for inspired living" class="absolute pointer-events-none hero-slice-left select-none" style="left: 2.031%; top: 70.295%; width: 20.023%; height: 11.338%; z-index: 20; animation-delay: 0.25s;" />
+
           <!-- Interactive Studio Button Hotspot (bottom right) -->
-          <a href="#about" class="absolute bottom-[4.5%] right-[2.2%] w-[11.5%] h-[7.5%] cursor-pointer group flex items-center justify-center hero-btn-studio" aria-label="Explore Studio">
+          <a href="#about" class="absolute bottom-[4.5%] right-[2.2%] w-[11.5%] h-[7.5%] cursor-pointer group flex items-center justify-center hero-btn-studio z-30" aria-label="Explore Studio">
             <div class="w-full h-full bg-black/0 group-hover:bg-white/20 rounded-xs transition-colors flex items-center justify-center">
               <span class="sr-only">Studio</span>
             </div>
           </a>
 
           <!-- Interactive Strips Hover Hotspots -->
-          <a href="#projects" class="absolute top-[20%] right-[32%] w-[9%] h-[60%] hero-hotspot rounded-xs" title="Cascade Villa" aria-label="Cascade Villa"></a>
-          <a href="#projects" class="absolute top-[12%] right-[21%] w-[9%] h-[60%] hero-hotspot rounded-xs" title="InHabit Spaces" aria-label="InHabit Spaces"></a>
-          <a href="#projects" class="absolute top-[28%] right-[11%] w-[9%] h-[60%] hero-hotspot rounded-xs" title="Modern Cube Garden" aria-label="Modern Cube Garden"></a>
-          <a href="#projects" class="absolute top-[18%] right-[0.5%] w-[9%] h-[60%] hero-hotspot rounded-xs" title="Main Entrance Residence" aria-label="Main Entrance Residence"></a>
+          <a href="#projects" class="absolute top-[20%] right-[32%] w-[9%] h-[60%] hero-hotspot rounded-xs z-30" title="Cascade Villa" aria-label="Cascade Villa"></a>
+          <a href="#projects" class="absolute top-[12%] right-[21%] w-[9%] h-[60%] hero-hotspot rounded-xs z-30" title="InHabit Spaces" aria-label="InHabit Spaces"></a>
+          <a href="#projects" class="absolute top-[28%] right-[11%] w-[9%] h-[60%] hero-hotspot rounded-xs z-30" title="Modern Cube Garden" aria-label="Modern Cube Garden"></a>
+          <a href="#projects" class="absolute top-[18%] right-[0.5%] w-[9%] h-[60%] hero-hotspot rounded-xs z-30" title="Main Entrance Residence" aria-label="Main Entrance Residence"></a>
         </div>
       </div>
 
       <!-- MOBILE HERO (Optimized for smartphone screens) -->
-      <div class="md:hidden px-6 pt-8 pb-14 hero-animated">
+      <div class="md:hidden px-6 pt-8 pb-14">
         <div>
-          <h1 class="font-display font-extrabold text-[54px] leading-[0.9] tracking-[-0.04em] text-black mb-3">
-            Architera
+          <h1 class="font-display font-extrabold text-[54px] leading-[0.9] tracking-[-0.04em] text-black mb-3 overflow-hidden flex items-baseline">
+            <span class="inline-block hero-slice-down" style="animation-delay: 0.15s;">Arc</span>
+            <span class="inline-block hero-slice-up" style="animation-delay: 0.3s;">hi</span>
+            <span class="inline-block hero-slice-down" style="animation-delay: 0.45s;">te</span>
+            <span class="inline-block hero-slice-up" style="animation-delay: 0.6s;">ra</span>
           </h1>
-          <p class="font-display text-lg text-neutral-500 font-normal leading-snug mb-8">
+          <p class="font-display text-lg text-neutral-500 font-normal leading-snug mb-8 hero-slice-left" style="animation-delay: 0.25s;">
             Architecture for<br />inspired living
           </p>
         </div>
