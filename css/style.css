@@ -143,6 +143,25 @@ body {
   will-change: transform, opacity;
 }
 
+/* Fluid Native Hero Typography & Containers */
+.hero-canvas-container {
+  container-type: inline-size;
+}
+
+.hero-wordmark-native {
+  font-size: clamp(3.2rem, 10.8vw, 186px);
+  font-size: 10.8cqw;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.hero-subtitle-native {
+  font-size: clamp(1rem, 2.05vw, 36px);
+  font-size: 2.05cqw;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
 /* Scroll Reveal Animations (Progressive Enhancement) */
 .reveal-on-scroll {
   opacity: 1;
